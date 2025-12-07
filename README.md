@@ -1,4 +1,5 @@
 # 🌟 ConstellaChat - 星座検索アプリ
+# 🌟 ConstellaChat - 星座検索アプリ
 
 LLMを使ったクエリ拡張で、あいまいな入力から今夜見える星座を探すアプリです。
 
@@ -52,7 +53,7 @@ streamlit run app.py
 ## プロジェクト構造
 
 ```
-skylore/
+ConstellaChat/
 ├── app.py                    # Streamlitメインアプリ
 ├── config.py                 # 設定ファイル
 ├── requirements.txt          # 依存パッケージ
