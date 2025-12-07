@@ -1,4 +1,4 @@
-# 🌟 SkyLore - 星座検索アプリ
+# 🌟 ConstellaChat - 星座検索アプリ
 
 LLMを使ったクエリ拡張で、あいまいな入力から今夜見える星座を探すアプリです。
 
@@ -48,7 +48,7 @@ streamlit run app.py
 ## プロジェクト構造
 
 ```
-skylore/
+ConstellaChat/
 ├── app.py                    # Streamlitメインアプリ
 ├── config.py                 # 設定ファイル
 ├── requirements.txt          # 依存パッケージ
@@ -71,7 +71,7 @@ skylore/
 
 ## 星座データのフォーマット
 
-`data/constellations.json` は以下の形式で作成してください：
+`data/constellations.json` は以下の形式となっています：
 
 ```json
 [
@@ -88,7 +88,7 @@ skylore/
 
 ## 転置インデックスのフォーマット
 
-`data/inverted_index.json` は以下の形式で作成してください：
+`data/inverted_index.json` は以下の形式となっています：
 
 ```json
 {
