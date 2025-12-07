@@ -1,0 +1,1828 @@
+{
+  "アンドロメダ座": [
+    "Andromeda"
+  ],
+  "アンドロメダ": [
+    "Andromeda",
+    "Cassiopeia"
+  ],
+  "Andromeda": [
+    "Andromeda"
+  ],
+  "andromeda": [
+    "Andromeda"
+  ],
+  "9": [
+    "Pisces",
+    "Scutum",
+    "Aries",
+    "Vulpecula",
+    "Camelopardalis",
+    "Lyra",
+    "UrsaMinor",
+    "Lacerta",
+    "Ophiuchus",
+    "Andromeda",
+    "Aquarius",
+    "Cepheus",
+    "Hercules",
+    "Equuleus",
+    "Microscopium",
+    "Pegasus",
+    "Cassiopeia",
+    "Cygnus",
+    "Serpens"
+  ],
+  "9月": [
+    "Pisces",
+    "Scutum",
+    "Aries",
+    "Vulpecula",
+    "Camelopardalis",
+    "Lyra",
+    "UrsaMinor",
+    "Lacerta",
+    "Ophiuchus",
+    "Andromeda",
+    "Aquarius",
+    "Cepheus",
+    "Hercules",
+    "Equuleus",
+    "Microscopium",
+    "Pegasus",
+    "Cassiopeia",
+    "Cygnus",
+    "Serpens"
+  ],
+  "10": [
+    "Taurus",
+    "Tucana",
+    "Pisces",
+    "Cetus",
+    "Aries",
+    "Vulpecula",
+    "Camelopardalis",
+    "Sculptor",
+    "UrsaMinor",
+    "Lacerta",
+    "Andromeda",
+    "Aquarius",
+    "Perseus",
+    "Cepheus",
+    "Equuleus",
+    "Microscopium",
+    "Pegasus",
+    "Cassiopeia",
+    "Cygnus"
+  ],
+  "10月": [
+    "Taurus",
+    "Tucana",
+    "Pisces",
+    "Cetus",
+    "Aries",
+    "Vulpecula",
+    "Camelopardalis",
+    "Sculptor",
+    "UrsaMinor",
+    "Lacerta",
+    "Andromeda",
+    "Aquarius",
+    "Perseus",
+    "Cepheus",
+    "Equuleus",
+    "Microscopium",
+    "Pegasus",
+    "Cassiopeia",
+    "Cygnus"
+  ],
+  "11": [
+    "Taurus",
+    "Tucana",
+    "Pisces",
+    "Cetus",
+    "Aries",
+    "Camelopardalis",
+    "Sculptor",
+    "UrsaMinor",
+    "Lacerta",
+    "Orion",
+    "Andromeda",
+    "Aquarius",
+    "Perseus",
+    "Cepheus",
+    "Equuleus",
+    "Microscopium",
+    "Triangulum",
+    "Pegasus",
+    "Cassiopeia"
+  ],
+  "11月": [
+    "Taurus",
+    "Tucana",
+    "Pisces",
+    "Cetus",
+    "Aries",
+    "Camelopardalis",
+    "Sculptor",
+    "UrsaMinor",
+    "Lacerta",
+    "Orion",
+    "Andromeda",
+    "Aquarius",
+    "Perseus",
+    "Cepheus",
+    "Equuleus",
+    "Microscopium",
+    "Triangulum",
+    "Pegasus",
+    "Cassiopeia"
+  ],
+  "12": [
+    "Taurus",
+    "Tucana",
+    "Pisces",
+    "Cetus",
+    "Lepus",
+    "Aries",
+    "Monoceros",
+    "Dorado",
+    "Camelopardalis",
+    "Eridanus",
+    "Sculptor",
+    "UrsaMinor",
+    "Orion",
+    "Andromeda",
+    "Perseus",
+    "Cepheus",
+    "Caelum",
+    "Triangulum",
+    "Cassiopeia"
+  ],
+  "12月": [
+    "Taurus",
+    "Tucana",
+    "Pisces",
+    "Cetus",
+    "Lepus",
+    "Aries",
+    "Monoceros",
+    "Dorado",
+    "Camelopardalis",
+    "Eridanus",
+    "Sculptor",
+    "UrsaMinor",
+    "Orion",
+    "Andromeda",
+    "Perseus",
+    "Cepheus",
+    "Caelum",
+    "Triangulum",
+    "Cassiopeia"
+  ],
+  "1": [
+    "Taurus",
+    "Pisces",
+    "Columba",
+    "Pictor",
+    "Cetus",
+    "Lepus",
+    "Monoceros",
+    "Dorado",
+    "Camelopardalis",
+    "Eridanus",
+    "UrsaMinor",
+    "Orion",
+    "Canis Major",
+    "Canis Minor",
+    "Andromeda",
+    "Perseus",
+    "Cepheus",
+    "Gemini",
+    "Auriga",
+    "Caelum",
+    "Cancer",
+    "Triangulum",
+    "Cassiopeia"
+  ],
+  "1月": [
+    "Taurus",
+    "Pisces",
+    "Columba",
+    "Pictor",
+    "Cetus",
+    "Lepus",
+    "Monoceros",
+    "Dorado",
+    "Camelopardalis",
+    "Eridanus",
+    "UrsaMinor",
+    "Orion",
+    "Canis Major",
+    "Canis Minor",
+    "Andromeda",
+    "Perseus",
+    "Cepheus",
+    "Gemini",
+    "Auriga",
+    "Caelum",
+    "Cancer",
+    "Triangulum",
+    "Cassiopeia"
+  ],
+  "秋": [
+    "Taurus",
+    "Tucana",
+    "Pisces",
+    "Cetus",
+    "Scutum",
+    "Aries",
+    "Vulpecula",
+    "Camelopardalis",
+    "Sculptor",
+    "Lyra",
+    "UrsaMinor",
+    "Lacerta",
+    "Orion",
+    "Ophiuchus",
+    "Andromeda",
+    "Aquarius",
+    "Perseus",
+    "Cepheus",
+    "Hercules",
+    "Equuleus",
+    "Microscopium",
+    "Triangulum",
+    "Pegasus",
+    "Cassiopeia",
+    "Cygnus",
+    "Serpens"
+  ],
+  "冬": [
+    "Taurus",
+    "Tucana",
+    "Leo",
+    "Pisces",
+    "Columba",
+    "Pictor",
+    "Cetus",
+    "Lepus",
+    "Aries",
+    "Monoceros",
+    "Dorado",
+    "Camelopardalis",
+    "Eridanus",
+    "Sculptor",
+    "UrsaMinor",
+    "Orion",
+    "Canis Major",
+    "Canis Minor",
+    "Andromeda",
+    "Perseus",
+    "Cepheus",
+    "Gemini",
+    "Auriga",
+    "Caelum",
+    "Cancer",
+    "Triangulum",
+    "Cassiopeia"
+  ],
+  "ペルセウス": [
+    "Andromeda",
+    "Pegasus",
+    "Perseus"
+  ],
+  "王": [
+    "Auriga",
+    "Taurus",
+    "Aries",
+    "Lupus",
+    "Andromeda",
+    "Cassiopeia",
+    "Cepheus",
+    "Corona Borealis",
+    "Cygnus",
+    "Coma Berenices",
+    "Gemini"
+  ],
+  "王女": [
+    "Corona Borealis",
+    "Andromeda",
+    "Taurus"
+  ],
+  "いっかくじゅう座": [
+    "Monoceros"
+  ],
+  "いっかくじゅう": [
+    "Monoceros"
+  ],
+  "Monoceros": [
+    "Monoceros"
+  ],
+  "monoceros": [
+    "Monoceros"
+  ],
+  "2": [
+    "Leo",
+    "Pisces",
+    "Columba",
+    "Pictor",
+    "Lepus",
+    "Monoceros",
+    "Dorado",
+    "Camelopardalis",
+    "Eridanus",
+    "UrsaMinor",
+    "Orion",
+    "Canis Major",
+    "Canis Minor",
+    "Perseus",
+    "Cepheus",
+    "Gemini",
+    "Auriga",
+    "Caelum",
+    "Cancer",
+    "Cassiopeia"
+  ],
+  "2月": [
+    "Leo",
+    "Pisces",
+    "Columba",
+    "Pictor",
+    "Lepus",
+    "Monoceros",
+    "Dorado",
+    "Camelopardalis",
+    "Eridanus",
+    "UrsaMinor",
+    "Orion",
+    "Canis Major",
+    "Canis Minor",
+    "Perseus",
+    "Cepheus",
+    "Gemini",
+    "Auriga",
+    "Caelum",
+    "Cancer",
+    "Cassiopeia"
+  ],
+  "いて座": [
+    "Sagittarius"
+  ],
+  "いて": [
+    "Sagittarius"
+  ],
+  "Sagittarius": [
+    "Sagittarius"
+  ],
+  "sagittarius": [
+    "Sagittarius"
+  ],
+  "6": [
+    "Delphinus",
+    "Cygnus",
+    "UrsaMajor",
+    "Camelopardalis",
+    "Lupus",
+    "Corvus",
+    "Crater",
+    "Sagittarius",
+    "UrsaMinor",
+    "Bootes",
+    "Scorpius",
+    "Corona Borealis",
+    "Hydra",
+    "Libra",
+    "Lyra",
+    "Coma Berenices",
+    "Leo Minor"
+  ],
+  "6月": [
+    "Delphinus",
+    "Cygnus",
+    "UrsaMajor",
+    "Camelopardalis",
+    "Lupus",
+    "Corvus",
+    "Crater",
+    "Sagittarius",
+    "UrsaMinor",
+    "Bootes",
+    "Scorpius",
+    "Corona Borealis",
+    "Hydra",
+    "Libra",
+    "Lyra",
+    "Coma Berenices",
+    "Leo Minor"
+  ],
+  "7": [
+    "Delphinus",
+    "Ophiuchus",
+    "Camelopardalis",
+    "Lupus",
+    "Lyra",
+    "Sagittarius",
+    "UrsaMinor",
+    "Bootes",
+    "Scorpius",
+    "Corona Borealis",
+    "Cygnus",
+    "Libra",
+    "Hercules",
+    "Scutum",
+    "Serpens"
+  ],
+  "7月": [
+    "Delphinus",
+    "Ophiuchus",
+    "Camelopardalis",
+    "Lupus",
+    "Lyra",
+    "Sagittarius",
+    "UrsaMinor",
+    "Bootes",
+    "Scorpius",
+    "Corona Borealis",
+    "Cygnus",
+    "Libra",
+    "Hercules",
+    "Scutum",
+    "Serpens"
+  ],
+  "8": [
+    "Vulpecula",
+    "Microscopium",
+    "Delphinus",
+    "Ophiuchus",
+    "Camelopardalis",
+    "Lupus",
+    "Lyra",
+    "Sagittarius",
+    "UrsaMinor",
+    "Bootes",
+    "Corona Borealis",
+    "Cygnus",
+    "Scutum",
+    "Hercules",
+    "Serpens"
+  ],
+  "8月": [
+    "Vulpecula",
+    "Microscopium",
+    "Delphinus",
+    "Ophiuchus",
+    "Camelopardalis",
+    "Lupus",
+    "Lyra",
+    "Sagittarius",
+    "UrsaMinor",
+    "Bootes",
+    "Corona Borealis",
+    "Cygnus",
+    "Scutum",
+    "Hercules",
+    "Serpens"
+  ],
+  "夏": [
+    "Scutum",
+    "Coma Berenices",
+    "Vulpecula",
+    "Camelopardalis",
+    "Lyra",
+    "UrsaMinor",
+    "Scorpius",
+    "Hydra",
+    "Leo Minor",
+    "Delphinus",
+    "Ophiuchus",
+    "Crater",
+    "Libra",
+    "Corona Borealis",
+    "Hercules",
+    "Microscopium",
+    "UrsaMajor",
+    "Lupus",
+    "Corvus",
+    "Sagittarius",
+    "Bootes",
+    "Cygnus",
+    "Serpens"
+  ],
+  "ゼウス": [
+    "Taurus",
+    "UrsaMajor",
+    "Centaurus",
+    "Lupus",
+    "Sagittarius",
+    "UrsaMinor",
+    "Aquarius",
+    "Cygnus",
+    "Aries",
+    "Gemini"
+  ],
+  "ヘルクレス": [
+    "Cancer",
+    "Leo",
+    "Centaurus",
+    "Sagittarius",
+    "Hydra",
+    "Hercules"
+  ],
+  "神": [
+    "Centaurus",
+    "Lepus",
+    "Coma Berenices",
+    "Virgo",
+    "Lyra",
+    "UrsaMinor",
+    "Scorpius",
+    "Hydra",
+    "Ara",
+    "Orion",
+    "Ophiuchus",
+    "Crater",
+    "Perseus",
+    "Libra",
+    "Cepheus",
+    "Corona Borealis",
+    "Hercules",
+    "Puppis",
+    "UrsaMajor",
+    "Lupus",
+    "Sagittarius",
+    "Cassiopeia",
+    "Cygnus"
+  ],
+  "ヒドラ": [
+    "Cancer",
+    "Centaurus",
+    "Sagittarius",
+    "Hydra",
+    "Hercules"
+  ],
+  "馬": [
+    "Auriga",
+    "Eridanus",
+    "Centaurus",
+    "Pegasus",
+    "Sagittarius",
+    "Equuleus"
+  ],
+  "神話": [
+    "Centaurus",
+    "Lupus",
+    "Ara",
+    "Hydra",
+    "Sagittarius",
+    "Libra",
+    "Perseus",
+    "Cassiopeia",
+    "Cygnus",
+    "Hercules",
+    "Coma Berenices",
+    "Cepheus",
+    "Puppis"
+  ],
+  "いるか座": [
+    "Delphinus"
+  ],
+  "いるか": [
+    "Delphinus"
+  ],
+  "Delphinus": [
+    "Delphinus"
+  ],
+  "delphinus": [
+    "Delphinus"
+  ],
+  "ポセイドン": [
+    "Delphinus"
+  ],
+  "インディアン座": [
+    "Indus"
+  ],
+  "インディアン": [
+    "Indus"
+  ],
+  "Indus": [
+    "Indus"
+  ],
+  "indus": [
+    "Indus"
+  ],
+  "うお座": [
+    "Pisces"
+  ],
+  "うお": [
+    "Pisces"
+  ],
+  "Pisces": [
+    "Pisces"
+  ],
+  "pisces": [
+    "Pisces"
+  ],
+  "魚": [
+    "Pisces"
+  ],
+  "うさぎ座": [
+    "Lepus"
+  ],
+  "うさぎ": [
+    "Lepus"
+  ],
+  "Lepus": [
+    "Lepus"
+  ],
+  "lepus": [
+    "Lepus"
+  ],
+  "オリオン": [
+    "Scorpius",
+    "Orion",
+    "Lepus",
+    "Canis Major"
+  ],
+  "うしかい座": [
+    "Bootes"
+  ],
+  "うしかい": [
+    "Bootes"
+  ],
+  "Bootes": [
+    "Bootes"
+  ],
+  "bootes": [
+    "Bootes"
+  ],
+  "3": [
+    "Orion",
+    "Auriga",
+    "Canis Major",
+    "Cancer",
+    "Virgo",
+    "Leo",
+    "Canis Minor",
+    "Camelopardalis",
+    "Columba",
+    "UrsaMinor",
+    "Bootes",
+    "Pictor",
+    "Antlia",
+    "Chamaeleon",
+    "Gemini"
+  ],
+  "3月": [
+    "Orion",
+    "Auriga",
+    "Canis Major",
+    "Cancer",
+    "Virgo",
+    "Leo",
+    "Canis Minor",
+    "Camelopardalis",
+    "Columba",
+    "UrsaMinor",
+    "Bootes",
+    "Pictor",
+    "Antlia",
+    "Chamaeleon",
+    "Gemini"
+  ],
+  "4": [
+    "UrsaMajor",
+    "Virgo",
+    "Chamaeleon",
+    "Leo",
+    "Canis Minor",
+    "Camelopardalis",
+    "Corvus",
+    "Crater",
+    "Antlia",
+    "UrsaMinor",
+    "Bootes",
+    "Hydra",
+    "Coma Berenices",
+    "Leo Minor"
+  ],
+  "4月": [
+    "UrsaMajor",
+    "Virgo",
+    "Chamaeleon",
+    "Leo",
+    "Canis Minor",
+    "Camelopardalis",
+    "Corvus",
+    "Crater",
+    "Antlia",
+    "UrsaMinor",
+    "Bootes",
+    "Hydra",
+    "Coma Berenices",
+    "Leo Minor"
+  ],
+  "5": [
+    "UrsaMajor",
+    "Virgo",
+    "Chamaeleon",
+    "Canis Minor",
+    "Camelopardalis",
+    "Corvus",
+    "Crater",
+    "Antlia",
+    "UrsaMinor",
+    "Bootes",
+    "Scorpius",
+    "Libra",
+    "Hydra",
+    "Coma Berenices",
+    "Leo Minor"
+  ],
+  "5月": [
+    "UrsaMajor",
+    "Virgo",
+    "Chamaeleon",
+    "Canis Minor",
+    "Camelopardalis",
+    "Corvus",
+    "Crater",
+    "Antlia",
+    "UrsaMinor",
+    "Bootes",
+    "Scorpius",
+    "Libra",
+    "Hydra",
+    "Coma Berenices",
+    "Leo Minor"
+  ],
+  "春": [
+    "Leo",
+    "Columba",
+    "Pictor",
+    "Coma Berenices",
+    "Virgo",
+    "Camelopardalis",
+    "UrsaMinor",
+    "Scorpius",
+    "Hydra",
+    "Leo Minor",
+    "Orion",
+    "Canis Major",
+    "Canis Minor",
+    "Crater",
+    "Libra",
+    "Antlia",
+    "Gemini",
+    "Auriga",
+    "Cancer",
+    "UrsaMajor",
+    "Corvus",
+    "Bootes",
+    "Chamaeleon"
+  ],
+  "うみへび座": [
+    "Hydra"
+  ],
+  "うみへび": [
+    "Hydra"
+  ],
+  "Hydra": [
+    "Hydra"
+  ],
+  "hydra": [
+    "Hydra"
+  ],
+  "ヘラ": [
+    "Hydra",
+    "Leo"
+  ],
+  "勇者": [
+    "Cancer",
+    "Leo",
+    "Pegasus",
+    "Hydra",
+    "Hercules"
+  ],
+  "怪物": [
+    "Cancer",
+    "Leo",
+    "Cetus",
+    "Hydra",
+    "Hercules"
+  ],
+  "女神": [
+    "Virgo",
+    "UrsaMajor",
+    "UrsaMinor",
+    "Libra",
+    "Hydra",
+    "Coma Berenices"
+  ],
+  "エリダヌス座": [
+    "Eridanus"
+  ],
+  "エリダヌス": [
+    "Eridanus"
+  ],
+  "Eridanus": [
+    "Eridanus"
+  ],
+  "eridanus": [
+    "Eridanus"
+  ],
+  "アポロン": [
+    "Lyra",
+    "Eridanus",
+    "Corvus",
+    "Ophiuchus"
+  ],
+  "へびつかい座": [
+    "Ophiuchus"
+  ],
+  "へびつかい": [
+    "Ophiuchus"
+  ],
+  "Ophiuchus": [
+    "Ophiuchus"
+  ],
+  "ophiuchus": [
+    "Ophiuchus"
+  ],
+  "へび座": [
+    "Serpens"
+  ],
+  "へび": [
+    "Serpens"
+  ],
+  "Serpens": [
+    "Serpens"
+  ],
+  "serpens": [
+    "Serpens"
+  ],
+  "オリオン座": [
+    "Orion"
+  ],
+  "Orion": [
+    "Orion"
+  ],
+  "orion": [
+    "Orion"
+  ],
+  "狩人": [
+    "Scorpius",
+    "Orion",
+    "Canis Major",
+    "Canis Minor"
+  ],
+  "サソリ": [
+    "Scorpius",
+    "Orion",
+    "Hercules"
+  ],
+  "かに座": [
+    "Cancer"
+  ],
+  "かに": [
+    "Cancer"
+  ],
+  "Cancer": [
+    "Cancer"
+  ],
+  "cancer": [
+    "Cancer"
+  ],
+  "かじき座": [
+    "Dorado"
+  ],
+  "かじき": [
+    "Dorado"
+  ],
+  "Dorado": [
+    "Dorado"
+  ],
+  "dorado": [
+    "Dorado"
+  ],
+  "かみのけ座": [
+    "Coma Berenices"
+  ],
+  "かみのけ": [
+    "Coma Berenices"
+  ],
+  "Coma Berenices": [
+    "Coma Berenices"
+  ],
+  "coma berenices": [
+    "Coma Berenices"
+  ],
+  "かんむり座": [
+    "Corona Borealis"
+  ],
+  "かんむり": [
+    "Corona Borealis"
+  ],
+  "Corona Borealis": [
+    "Corona Borealis"
+  ],
+  "corona borealis": [
+    "Corona Borealis"
+  ],
+  "くじら座": [
+    "Cetus"
+  ],
+  "くじら": [
+    "Cetus"
+  ],
+  "Cetus": [
+    "Cetus"
+  ],
+  "cetus": [
+    "Cetus"
+  ],
+  "くじゃく座": [
+    "Pavo"
+  ],
+  "くじゃく": [
+    "Pavo"
+  ],
+  "Pavo": [
+    "Pavo"
+  ],
+  "pavo": [
+    "Pavo"
+  ],
+  "おおかみ座": [
+    "Lupus"
+  ],
+  "おおかみ": [
+    "Lupus"
+  ],
+  "Lupus": [
+    "Lupus"
+  ],
+  "lupus": [
+    "Lupus"
+  ],
+  "おおいぬ座": [
+    "Canis Major"
+  ],
+  "おおいぬ": [
+    "Canis Major"
+  ],
+  "Canis Major": [
+    "Canis Major"
+  ],
+  "canis major": [
+    "Canis Major"
+  ],
+  "おおぐま座": [
+    "UrsaMajor"
+  ],
+  "おおぐま": [
+    "UrsaMajor"
+  ],
+  "UrsaMajor": [
+    "UrsaMajor"
+  ],
+  "ursamajor": [
+    "UrsaMajor"
+  ],
+  "アルテミス": [
+    "UrsaMinor",
+    "UrsaMajor"
+  ],
+  "おうし座": [
+    "Taurus"
+  ],
+  "おうし": [
+    "Taurus"
+  ],
+  "Taurus": [
+    "Taurus"
+  ],
+  "taurus": [
+    "Taurus"
+  ],
+  "牡牛": [
+    "Taurus"
+  ],
+  "おとめ座": [
+    "Virgo"
+  ],
+  "おとめ": [
+    "Virgo"
+  ],
+  "Virgo": [
+    "Virgo"
+  ],
+  "virgo": [
+    "Virgo"
+  ],
+  "ハデス": [
+    "Virgo"
+  ],
+  "おひつじ座": [
+    "Aries"
+  ],
+  "おひつじ": [
+    "Aries"
+  ],
+  "Aries": [
+    "Aries"
+  ],
+  "aries": [
+    "Aries"
+  ],
+  "こうま座": [
+    "Equuleus"
+  ],
+  "こうま": [
+    "Equuleus"
+  ],
+  "Equuleus": [
+    "Equuleus"
+  ],
+  "equuleus": [
+    "Equuleus"
+  ],
+  "こじし座": [
+    "Leo Minor"
+  ],
+  "こじし": [
+    "Leo Minor"
+  ],
+  "Leo Minor": [
+    "Leo Minor"
+  ],
+  "leo minor": [
+    "Leo Minor"
+  ],
+  "ライオン": [
+    "Leo",
+    "Hercules",
+    "Leo Minor"
+  ],
+  "こぎつね座": [
+    "Vulpecula"
+  ],
+  "こぎつね": [
+    "Vulpecula"
+  ],
+  "Vulpecula": [
+    "Vulpecula"
+  ],
+  "vulpecula": [
+    "Vulpecula"
+  ],
+  "こぐま座": [
+    "UrsaMinor"
+  ],
+  "こぐま": [
+    "UrsaMinor"
+  ],
+  "UrsaMinor": [
+    "UrsaMinor"
+  ],
+  "ursaminor": [
+    "UrsaMinor"
+  ],
+  "ふたご座": [
+    "Gemini"
+  ],
+  "ふたご": [
+    "Gemini"
+  ],
+  "Gemini": [
+    "Gemini"
+  ],
+  "gemini": [
+    "Gemini"
+  ],
+  "戦い": [
+    "Gemini"
+  ],
+  "ふうちょう座": [
+    "Apus"
+  ],
+  "ふうちょう": [
+    "Apus"
+  ],
+  "Apus": [
+    "Apus"
+  ],
+  "apus": [
+    "Apus"
+  ],
+  "鳥": [
+    "Apus",
+    "Tucana",
+    "Cygnus",
+    "Phoenix"
+  ],
+  "はくちょう座": [
+    "Cygnus"
+  ],
+  "はくちょう": [
+    "Cygnus"
+  ],
+  "Cygnus": [
+    "Cygnus"
+  ],
+  "cygnus": [
+    "Cygnus"
+  ],
+  "はちぶんぎ座": [
+    "Octans"
+  ],
+  "はちぶんぎ": [
+    "Octans"
+  ],
+  "Octans": [
+    "Octans"
+  ],
+  "octans": [
+    "Octans"
+  ],
+  "みずへび座": [
+    "Hydrus"
+  ],
+  "みずへび": [
+    "Hydrus"
+  ],
+  "Hydrus": [
+    "Hydrus"
+  ],
+  "hydrus": [
+    "Hydrus"
+  ],
+  "みずがめ座": [
+    "Aquarius"
+  ],
+  "みずがめ": [
+    "Aquarius"
+  ],
+  "Aquarius": [
+    "Aquarius"
+  ],
+  "aquarius": [
+    "Aquarius"
+  ],
+  "みなみじゅうじ座": [
+    "Crux"
+  ],
+  "みなみじゅうじ": [
+    "Crux"
+  ],
+  "Crux": [
+    "Crux"
+  ],
+  "crux": [
+    "Crux"
+  ],
+  "みなみのかんむり座": [
+    "CoronaAustralis"
+  ],
+  "みなみのかんむり": [
+    "CoronaAustralis"
+  ],
+  "CoronaAustralis": [
+    "CoronaAustralis"
+  ],
+  "coronaaustralis": [
+    "CoronaAustralis"
+  ],
+  "みなみのさんかく座": [
+    "TriangulumAustrale"
+  ],
+  "みなみのさんかく": [
+    "TriangulumAustrale"
+  ],
+  "TriangulumAustrale": [
+    "TriangulumAustrale"
+  ],
+  "triangulumaustrale": [
+    "TriangulumAustrale"
+  ],
+  "みなみのうお座": [
+    "PiscisAustrinus"
+  ],
+  "みなみのうお": [
+    "PiscisAustrinus"
+  ],
+  "PiscisAustrinus": [
+    "PiscisAustrinus"
+  ],
+  "piscisaustrinus": [
+    "PiscisAustrinus"
+  ],
+  "とびうお座": [
+    "Volans"
+  ],
+  "とびうお": [
+    "Volans"
+  ],
+  "Volans": [
+    "Volans"
+  ],
+  "volans": [
+    "Volans"
+  ],
+  "とけい座": [
+    "Horologium"
+  ],
+  "とけい": [
+    "Horologium"
+  ],
+  "Horologium": [
+    "Horologium"
+  ],
+  "horologium": [
+    "Horologium"
+  ],
+  "つる座": [
+    "Grus"
+  ],
+  "つる": [
+    "Grus"
+  ],
+  "Grus": [
+    "Grus"
+  ],
+  "grus": [
+    "Grus"
+  ],
+  "じょうぎ座": [
+    "Norma"
+  ],
+  "じょうぎ": [
+    "Norma"
+  ],
+  "Norma": [
+    "Norma"
+  ],
+  "norma": [
+    "Norma"
+  ],
+  "やまねこ座": [
+    "Lynx"
+  ],
+  "やまねこ": [
+    "Lynx"
+  ],
+  "Lynx": [
+    "Lynx"
+  ],
+  "lynx": [
+    "Lynx"
+  ],
+  "やぎ座": [
+    "Capricornus"
+  ],
+  "やぎ": [
+    "Capricornus"
+  ],
+  "Capricornus": [
+    "Capricornus"
+  ],
+  "capricornus": [
+    "Capricornus"
+  ],
+  "や座": [
+    "Sagitta"
+  ],
+  "や": [
+    "Sagitta"
+  ],
+  "Sagitta": [
+    "Sagitta"
+  ],
+  "sagitta": [
+    "Sagitta"
+  ],
+  "とも座": [
+    "Puppis"
+  ],
+  "とも": [
+    "Puppis"
+  ],
+  "Puppis": [
+    "Puppis"
+  ],
+  "puppis": [
+    "Puppis"
+  ],
+  "さそり座": [
+    "Scorpius"
+  ],
+  "さそり": [
+    "Scorpius"
+  ],
+  "Scorpius": [
+    "Scorpius"
+  ],
+  "scorpius": [
+    "Scorpius"
+  ],
+  "しし座": [
+    "Leo"
+  ],
+  "しし": [
+    "Leo"
+  ],
+  "Leo": [
+    "Leo"
+  ],
+  "leo": [
+    "Leo"
+  ],
+  "さんかく座": [
+    "Triangulum"
+  ],
+  "さんかく": [
+    "Triangulum"
+  ],
+  "Triangulum": [
+    "Triangulum"
+  ],
+  "triangulum": [
+    "Triangulum"
+  ],
+  "てんびん座": [
+    "Libra"
+  ],
+  "てんびん": [
+    "Libra"
+  ],
+  "Libra": [
+    "Libra"
+  ],
+  "libra": [
+    "Libra"
+  ],
+  "テーブルさん座": [
+    "Mensa"
+  ],
+  "テーブルさん": [
+    "Mensa"
+  ],
+  "Mensa": [
+    "Mensa"
+  ],
+  "mensa": [
+    "Mensa"
+  ],
+  "ペガスス座": [
+    "Pegasus"
+  ],
+  "ペガスス": [
+    "Pegasus"
+  ],
+  "Pegasus": [
+    "Pegasus"
+  ],
+  "pegasus": [
+    "Pegasus"
+  ],
+  "ペルセウス座": [
+    "Perseus"
+  ],
+  "Perseus": [
+    "Perseus"
+  ],
+  "perseus": [
+    "Perseus"
+  ],
+  "ヘルクレス座": [
+    "Hercules"
+  ],
+  "Hercules": [
+    "Hercules"
+  ],
+  "hercules": [
+    "Hercules"
+  ],
+  "冒険": [
+    "Hercules"
+  ],
+  "ほうおう座": [
+    "Phoenix"
+  ],
+  "ほうおう": [
+    "Phoenix"
+  ],
+  "Phoenix": [
+    "Phoenix"
+  ],
+  "phoenix": [
+    "Phoenix"
+  ],
+  "伝説": [
+    "Phoenix"
+  ],
+  "ほ座": [
+    "Vela"
+  ],
+  "ほ": [
+    "Vela"
+  ],
+  "Vela": [
+    "Vela"
+  ],
+  "vela": [
+    "Vela"
+  ],
+  "ぼうえんきょう座": [
+    "TeleScopium"
+  ],
+  "ぼうえんきょう": [
+    "TeleScopium"
+  ],
+  "TeleScopium": [
+    "TeleScopium"
+  ],
+  "telescopium": [
+    "TeleScopium"
+  ],
+  "はと座": [
+    "Columba"
+  ],
+  "はと": [
+    "Columba"
+  ],
+  "Columba": [
+    "Columba"
+  ],
+  "columba": [
+    "Columba"
+  ],
+  "とかげ座": [
+    "Lacerta"
+  ],
+  "とかげ": [
+    "Lacerta"
+  ],
+  "Lacerta": [
+    "Lacerta"
+  ],
+  "lacerta": [
+    "Lacerta"
+  ],
+  "はえ座": [
+    "Musca"
+  ],
+  "はえ": [
+    "Musca"
+  ],
+  "Musca": [
+    "Musca"
+  ],
+  "musca": [
+    "Musca"
+  ],
+  "りゅう座": [
+    "Draco"
+  ],
+  "りゅう": [
+    "Draco"
+  ],
+  "Draco": [
+    "Draco"
+  ],
+  "draco": [
+    "Draco"
+  ],
+  "りゅうこつ座": [
+    "Carina"
+  ],
+  "りゅうこつ": [
+    "Carina"
+  ],
+  "Carina": [
+    "Carina"
+  ],
+  "carina": [
+    "Carina"
+  ],
+  "りょうけん座": [
+    "CanesVenatici"
+  ],
+  "りょうけん": [
+    "CanesVenatici"
+  ],
+  "CanesVenatici": [
+    "CanesVenatici"
+  ],
+  "canesvenatici": [
+    "CanesVenatici"
+  ],
+  "レチクル座": [
+    "Reticulum"
+  ],
+  "レチクル": [
+    "Reticulum"
+  ],
+  "Reticulum": [
+    "Reticulum"
+  ],
+  "reticulum": [
+    "Reticulum"
+  ],
+  "ろくぶんぎ座": [
+    "Sextans"
+  ],
+  "ろくぶんぎ": [
+    "Sextans"
+  ],
+  "Sextans": [
+    "Sextans"
+  ],
+  "sextans": [
+    "Sextans"
+  ],
+  "ろ座": [
+    "Fornax"
+  ],
+  "ろ": [
+    "Fornax"
+  ],
+  "Fornax": [
+    "Fornax"
+  ],
+  "fornax": [
+    "Fornax"
+  ],
+  "わし座": [
+    "Aquila"
+  ],
+  "わし": [
+    "Aquila"
+  ],
+  "Aquila": [
+    "Aquila"
+  ],
+  "aquila": [
+    "Aquila"
+  ],
+  "ポンプ座": [
+    "Antlia"
+  ],
+  "ポンプ": [
+    "Antlia"
+  ],
+  "Antlia": [
+    "Antlia"
+  ],
+  "antlia": [
+    "Antlia"
+  ],
+  "ぎょしゃ座": [
+    "Auriga"
+  ],
+  "ぎょしゃ": [
+    "Auriga"
+  ],
+  "Auriga": [
+    "Auriga"
+  ],
+  "auriga": [
+    "Auriga"
+  ],
+  "がか座": [
+    "Pictor"
+  ],
+  "がか": [
+    "Pictor"
+  ],
+  "Pictor": [
+    "Pictor"
+  ],
+  "pictor": [
+    "Pictor"
+  ],
+  "ちょうこくしつ座": [
+    "Sculptor"
+  ],
+  "ちょうこくしつ": [
+    "Sculptor"
+  ],
+  "Sculptor": [
+    "Sculptor"
+  ],
+  "sculptor": [
+    "Sculptor"
+  ],
+  "ちょうこくぐ座": [
+    "Caelum"
+  ],
+  "ちょうこくぐ": [
+    "Caelum"
+  ],
+  "Caelum": [
+    "Caelum"
+  ],
+  "caelum": [
+    "Caelum"
+  ],
+  "コップ座": [
+    "Crater"
+  ],
+  "コップ": [
+    "Crater"
+  ],
+  "Crater": [
+    "Crater"
+  ],
+  "crater": [
+    "Crater"
+  ],
+  "からす座": [
+    "Corvus"
+  ],
+  "からす": [
+    "Corvus"
+  ],
+  "Corvus": [
+    "Corvus"
+  ],
+  "corvus": [
+    "Corvus"
+  ],
+  "カシオペア座": [
+    "Cassiopeia"
+  ],
+  "カシオペア": [
+    "Cassiopeia"
+  ],
+  "Cassiopeia": [
+    "Cassiopeia"
+  ],
+  "cassiopeia": [
+    "Cassiopeia"
+  ],
+  "カメレオン座": [
+    "Chamaeleon"
+  ],
+  "カメレオン": [
+    "Chamaeleon"
+  ],
+  "Chamaeleon": [
+    "Chamaeleon"
+  ],
+  "chamaeleon": [
+    "Chamaeleon"
+  ],
+  "ケンタウルス座": [
+    "Centaurus"
+  ],
+  "ケンタウルス": [
+    "Centaurus"
+  ],
+  "Centaurus": [
+    "Centaurus"
+  ],
+  "centaurus": [
+    "Centaurus"
+  ],
+  "ケフェウス座": [
+    "Cepheus"
+  ],
+  "ケフェウス": [
+    "Cepheus"
+  ],
+  "Cepheus": [
+    "Cepheus"
+  ],
+  "cepheus": [
+    "Cepheus"
+  ],
+  "こと座": [
+    "Lyra"
+  ],
+  "こと": [
+    "Lyra"
+  ],
+  "Lyra": [
+    "Lyra"
+  ],
+  "lyra": [
+    "Lyra"
+  ],
+  "コンパス座": [
+    "Circinus"
+  ],
+  "コンパス": [
+    "Circinus"
+  ],
+  "Circinus": [
+    "Circinus"
+  ],
+  "circinus": [
+    "Circinus"
+  ],
+  "こいぬ座": [
+    "Canis Minor"
+  ],
+  "こいぬ": [
+    "Canis Minor"
+  ],
+  "Canis Minor": [
+    "Canis Minor"
+  ],
+  "canis minor": [
+    "Canis Minor"
+  ],
+  "きりん座": [
+    "Camelopardalis"
+  ],
+  "きりん": [
+    "Camelopardalis"
+  ],
+  "Camelopardalis": [
+    "Camelopardalis"
+  ],
+  "camelopardalis": [
+    "Camelopardalis"
+  ],
+  "けんびきょう座": [
+    "Microscopium"
+  ],
+  "けんびきょう": [
+    "Microscopium"
+  ],
+  "Microscopium": [
+    "Microscopium"
+  ],
+  "microscopium": [
+    "Microscopium"
+  ],
+  "さいだん座": [
+    "Ara"
+  ],
+  "さいだん": [
+    "Ara"
+  ],
+  "Ara": [
+    "Ara"
+  ],
+  "ara": [
+    "Ara"
+  ],
+  "たて座": [
+    "Scutum"
+  ],
+  "たて": [
+    "Scutum"
+  ],
+  "Scutum": [
+    "Scutum"
+  ],
+  "scutum": [
+    "Scutum"
+  ],
+  "らしんばん座": [
+    "Pyxis"
+  ],
+  "らしんばん": [
+    "Pyxis"
+  ],
+  "Pyxis": [
+    "Pyxis"
+  ],
+  "pyxis": [
+    "Pyxis"
+  ],
+  "きょしちょう座": [
+    "Tucana"
+  ],
+  "きょしちょう": [
+    "Tucana"
+  ],
+  "Tucana": [
+    "Tucana"
+  ],
+  "tucana": [
+    "Tucana"
+  ],
+  "冬の大三角": [
+    "Orion",
+    "Canis Major",
+    "Canis Minor"
+  ],
+  "夏の大三角": [
+    "Cygnus",
+    "Aquila",
+    "Lyra"
+  ],
+  "春の大三角": [
+    "Leo",
+    "Bootes",
+    "Virgo"
+  ],
+  "春の大曲線": [
+    "Virgo",
+    "Bootes",
+    "UrsaMajor"
+  ]
+}

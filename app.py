@@ -1,5 +1,5 @@
 """
-SkyLore - 星座検索アプリ (Streamlit版)
+ConstellaChat - 星座検索アプリ (Streamlit版)
 あいまいなクエリから今夜見える星座を探そう
 """
 import streamlit as st
@@ -21,7 +21,7 @@ from config import CONSTELLATION_DATA_PATH, INDEX_PATH, DEFAULT_LLM, DEFAULT_TOP
 
 # ページ設定
 st.set_page_config(
-    page_title="SkyLore - 星座検索",
+    page_title="ConstellaChat - 星座検索",
     page_icon="🌟",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -144,7 +144,7 @@ def main():
     init_session_state()
     
     # ヘッダー
-    st.markdown('<h1 class="main-title">🌟 SkyLore 🌟</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-title">🌟 ConstellaChat 🌟</h1>', unsafe_allow_html=True)
     st.markdown('<p class="subtitle">今夜の空に輝く星座を見つけよう</p>', unsafe_allow_html=True)
     
     # サイドバー
@@ -267,7 +267,7 @@ def main():
     st.markdown("---")
     st.markdown("""
     <div style="text-align: center; color: #666; font-size: 0.9rem;">
-        🌟 SkyLore - LLMを使った星座検索アプリ 🌟<br>
+        🌟 ConstellaChat - LLMを使った星座検索アプリ 🌟<br>
         検索 + LLM によるクエリ拡張で、あいまいな入力から星座を探します
     </div>
     """, unsafe_allow_html=True)

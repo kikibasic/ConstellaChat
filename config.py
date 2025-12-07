@@ -1,5 +1,5 @@
 """
-SkyLore - 設定ファイル
+ConstellaChat - 設定ファイル
 """
 import os
 import argparse
