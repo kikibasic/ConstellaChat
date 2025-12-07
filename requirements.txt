@@ -1,0 +1,10 @@
+# SkyLore - 依存パッケージ
+
+# Web UI
+streamlit>=1.28.0
+
+# OpenAI API
+openai>=1.0.0
+
+# ユーティリティ
+python-dotenv>=1.0.0
