@@ -3,7 +3,11 @@ SkyLore - クエリ拡張モジュール
 Gen-QERの仕組みを参考に、LLMを使ってあいまいなクエリを拡張する
 """
 import os
+from dotenv import load_dotenv
 from openai import OpenAI
+
+# .envファイルを読み込み
+load_dotenv()
 
 # プロンプトテンプレート
 QUERY_EXPANSION_PROMPT = """あなたは星座検索システムのクエリ拡張アシスタントです。
@@ -55,7 +59,11 @@ class QueryExpander:
     
     def __init__(self, model: str = "gpt-4o-mini"):
         self.model = model
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        # OPENAI_API_KEY または OPENAI_KEY のどちらでも対応
+        api_key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_KEY")
+        if not api_key:
+            raise ValueError("APIキーが設定されていません。.envファイルにOPENAI_API_KEYを設定してください。")
+        self.client = OpenAI(api_key=api_key)
     
     def expand(self, query: str) -> dict:
         """
@@ -139,7 +147,11 @@ class StoryGenerator:
     
     def __init__(self, model: str = "gpt-4o-mini"):
         self.model = model
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        # OPENAI_API_KEY または OPENAI_KEY のどちらでも対応
+        api_key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_KEY")
+        if not api_key:
+            raise ValueError("APIキーが設定されていません。.envファイルにOPENAI_API_KEYを設定してください。")
+        self.client = OpenAI(api_key=api_key)
     
     def generate(self, constellation_data: dict, related_constellations: list = None) -> str:
         """

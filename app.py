@@ -6,6 +6,10 @@ import streamlit as st
 import json
 import os
 from datetime import datetime
+from dotenv import load_dotenv
+
+# .envファイルを読み込み
+load_dotenv()
 
 # パス設定
 import sys
@@ -147,15 +151,23 @@ def main():
     with st.sidebar:
         st.header("⚙️ 設定")
         
-        # APIキー入力
-        api_key = st.text_input(
-            "OpenAI API Key",
-            type="password",
-            value=os.getenv("OPENAI_API_KEY", ""),
-            help="クエリ拡張とストーリー生成に使用します"
-        )
-        if api_key:
-            os.environ["OPENAI_API_KEY"] = api_key
+        # APIキーの状態確認
+        env_api_key = os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_KEY")
+        
+        if env_api_key:
+            st.success("✅ APIキー設定済み（.envファイル）")
+            api_key = env_api_key
+        else:
+            # APIキー入力（.envがない場合のフォールバック）
+            api_key = st.text_input(
+                "OpenAI API Key",
+                type="password",
+                help="クエリ拡張とストーリー生成に使用します。.envファイルでも設定可能です。"
+            )
+            if api_key:
+                os.environ["OPENAI_API_KEY"] = api_key
+            else:
+                st.warning("⚠️ APIキーを入力するか、.envファイルを設定してください")
         
         # 検索設定
         top_k = st.slider("表示する星座の数", 1, 10, DEFAULT_TOP_K)

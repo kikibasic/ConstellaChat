@@ -1,4 +1,4 @@
-# 🌟 SkyLore - 星座検索アプリ
+# 🌟 ConstellaChat - 星座検索アプリ
 
 LLMを使ったクエリ拡張で、あいまいな入力から今夜見える星座を探すアプリです。
 
@@ -34,10 +34,14 @@ pip install -r requirements.txt
 ### 3. 環境変数の設定
 
 ```bash
-export OPENAI_API_KEY="your-api-key-here"
+# .env.exampleをコピーして.envを作成
+cp .env.example .env
+
+# .envファイルを編集してAPIキーを設定
+# OPENAI_API_KEY=your-api-key-here
 ```
 
-または、アプリのサイドバーで直接入力できます。
+**注意**: `.env`ファイルはGitにコミットしないでください（.gitignoreに含まれています）
 
 ### 4. 実行
 
@@ -65,13 +69,13 @@ skylore/
 
 | 担当者 | タスク |
 |--------|--------|
-| 友達 | 星座データ (`constellations.json`) の作成 |
-| 友達 | 転置インデックス (`inverted_index.json`) の構築 |
-| あなた | アプリのメインロジック（このリポジトリ） |
+| さり | 星座データ (`constellations.json`) の作成 |
+| さり | 転置インデックス (`inverted_index.json`) の構築 |
+| あいら | アプリのメインロジック（このリポジトリ） |
 
 ## 星座データのフォーマット
 
-`data/constellations.json` は以下の形式で作成してください：
+`data/constellations.json` は以下の形式で作成：
 
 ```json
 [
@@ -88,7 +92,7 @@ skylore/
 
 ## 転置インデックスのフォーマット
 
-`data/inverted_index.json` は以下の形式で作成してください：
+`data/inverted_index.json` は以下の形式で作成：
 
 ```json
 {

@@ -1,0 +1,32 @@
+# --- Python / Environment ---
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+env/
+venv/
+.venv/
+*.env
+.env
+
+# --- IDE Settings (VS Code etc) ---
+.vscode/
+.idea/
+*.swp
+
+# --- SkyLore Specific ---
+# 実験結果やログは除外
+exp/
+logs/
+
+# --- System / Large Files ---
+.DS_Store
+Thumbs.db
+*.tar.gz
+*.zip
+
+# --- Logs ---
+*.log
+
+# --- Caches ---
+.cache/

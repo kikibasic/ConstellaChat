@@ -3,9 +3,13 @@ SkyLore - 設定ファイル
 """
 import os
 import argparse
+from dotenv import load_dotenv
 
-# OpenAI API設定
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+# .envファイルを読み込み
+load_dotenv()
+
+# OpenAI API設定（OPENAI_API_KEY または OPENAI_KEY のどちらでも対応）
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY") or os.getenv("OPENAI_KEY", "")
 
 # デフォルト設定
 DEFAULT_LLM = "gpt-4o-mini"

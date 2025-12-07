@@ -8,3 +8,7 @@ openai>=1.0.0
 
 # ユーティリティ
 python-dotenv>=1.0.0
+
+# 形態素解析（オプション：友達がインデックス改良時に使用）
+# mecab-python3>=1.0.0
+# unidic-lite>=1.0.0
