@@ -4,6 +4,7 @@ ConstellaChat - 設定ファイル
 import os
 import argparse
 from dotenv import load_dotenv
+from pathlib import Path
 
 # .envファイルを読み込み
 load_dotenv()
@@ -16,9 +17,12 @@ DEFAULT_LLM = "gpt-4o-mini"
 DEFAULT_TOP_K = 5  # 検索結果の上位K件
 
 # ファイルパス
-DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
-CONSTELLATION_DATA_PATH = os.path.join(DATA_DIR, "constellations.json")
-INDEX_PATH = os.path.join(DATA_DIR, "inverted_index.json")
+PROJECT_ROOT = Path(__file__).resolve().parent
+DATA_DIR = PROJECT_ROOT / "data"
+CONSTELLATION_DATA_PATH = DATA_DIR / "constellation_data_with_keywords.json"
+INDEX_DIR = DATA_DIR / "index_constellation"
+
+VECTOR_STORE_ID = "vs_6936a06353e48191ab2d280aedb802d6"
 
 # 月と季節のマッピング
 MONTH_TO_SEASON = {

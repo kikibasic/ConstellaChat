@@ -6,20 +6,18 @@ from pathlib import Path
 import os
 import joblib
 from openai import OpenAI
-from constellation_bm25_build import InvertedIndexArray
+from .constellation_bm25_build import InvertedIndexArray
+from dotenv import load_dotenv
+from config import PROJECT_ROOT, INDEX_DIR, VECTOR_STORE_ID
+import sys
 
-# =========================
-# 設定
-# =========================
 
-PROJECT_ROOT = Path(__file__).resolve().parent
-INDEX_DIR = PROJECT_ROOT / "data/index_constellation"
+load_dotenv(dotenv_path=PROJECT_ROOT / ".env")
+client = OpenAI()
 
-# さっき作った Vector Store の ID（ログに出ていたものをそのまま貼る）
-VECTOR_STORE_ID = "vs_6936a06353e48191ab2d280aedb802d6"
-
-# APIキー（環境変数で設定しておくこと）
-client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
+if __name__ != "__main__":
+    # InvertedIndexArrayクラスを現在の実行環境の__main__に一時的に追加
+    sys.modules['__main__'].InvertedIndexArray = InvertedIndexArray
 
 # =========================
 # BM25 インデックスのロード

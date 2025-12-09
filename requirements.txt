@@ -8,3 +8,7 @@ openai>=1.0.0
 
 # Utilities
 python-dotenv>=1.0.0
+
+
+joblib
+fugashi[unidic-lite]
