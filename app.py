@@ -50,6 +50,24 @@ st.markdown("""
         color: #ffffff !important;
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
     }
+    
+    /* =========================================
+       サイドバー設定
+       ========================================= */
+    [data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #1a1a35 0%, #252548 100%) !important;
+    }
+    
+    [data-testid="stSidebar"] * {
+        color: #ffffff !important;
+    }
+    
+    /* サイドバーのウィジェット背景 */
+    [data-testid="stSidebar"] [data-baseweb="select"],
+    [data-testid="stSidebar"] .stTextInput > div > div > input,
+    [data-testid="stSidebar"] .stSlider {
+        background-color: rgba(255, 255, 255, 0.1) !important;
+    }
 
     /* =========================================
        背景設定
@@ -238,85 +256,116 @@ st.markdown("""
     
     .score-badge {
         background: rgba(200, 180, 255, 0.3);
-        color: #ffffff !important;
-        padding: 0.3rem 0.8rem;
-        border-radius: 12px;
-        font-weight: 500;
-        font-size: 0.8rem;
-        float: right;
         border: 1px solid rgba(200, 180, 255, 0.4);
+        padding: 0.3rem 0.8rem;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        margin-left: 1rem;
+        display: inline-block;
+        color: #ffffff !important;
+    }
+    
+    /* 関連星座セクション */
+    .related-constellations {
+        background: rgba(50, 45, 85, 0.7);
+        border: 1px solid rgba(180, 160, 220, 0.5);
+        border-radius: 12px;
+        padding: 1.2rem;
+        margin-top: 1.2rem;
+    }
+    
+    .related-title {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: #ffe8ff !important;
+        margin-bottom: 0.8rem;
+        letter-spacing: 0.05em;
+    }
+    
+    .related-item {
+        display: inline-block;
+        background: rgba(100, 85, 150, 0.5);
+        border: 1px solid rgba(180, 160, 220, 0.6);
+        padding: 0.6rem 1rem;
+        border-radius: 18px;
+        margin: 0.4rem 0.4rem 0.4rem 0;
+        font-size: 0.85rem;
+        transition: all 0.2s ease;
+        cursor: default;
+        vertical-align: top;
+    }
+    
+    .related-item:hover {
+        background: rgba(120, 100, 180, 0.7);
+        border-color: rgba(200, 180, 230, 0.8);
+        box-shadow: 0 0 15px rgba(150, 130, 200, 0.5);
+        transform: translateY(-1px);
+    }
+    
+    .related-name {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 0.25rem;
+        color: #ffffff !important;
+        font-size: 0.9rem;
+    }
+    
+    .related-desc {
+        font-size: 0.75rem;
+        color: #e0e0ff !important;
+        font-style: italic;
+        display: block;
+        line-height: 1.4;
     }
     
     /* ストーリーボックス */
     .story-box {
-        background: rgba(200, 180, 255, 0.1);
-        border-left: 3px solid rgba(200, 180, 255, 0.6);
-        border-radius: 0 12px 12px 0;
-        padding: 1.2rem 1.5rem;
-        margin-top: 0.8rem;
-        margin-bottom: 1rem;
+        background: rgba(50, 40, 80, 0.6);
+        border: 1px solid rgba(200, 180, 255, 0.3);
+        border-radius: 12px;
+        padding: 1.5rem;
+        margin-top: 1rem;
+        box-shadow: 
+            inset 0 2px 8px rgba(0, 0, 0, 0.3),
+            0 4px 16px rgba(0, 0, 0, 0.2);
     }
     
     .story-title {
         font-family: 'Zen Maru Gothic', sans-serif;
-        font-size: 1rem;
-        font-weight: 500;
-        color: #E6E6FA !important;
-        margin-bottom: 0.8rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: rgba(220, 200, 255, 0.95) !important;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(200, 180, 255, 0.2);
     }
     
     .story-content {
         font-family: 'Noto Sans JP', sans-serif;
-        font-size: 0.9rem;
+        font-size: 0.95rem;
         line-height: 1.9;
         color: #ffffff !important;
-    }
-    
-    /* サイドバー */
-    [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, rgba(25, 25, 45, 0.98) 0%, rgba(35, 35, 60, 0.98) 100%);
-        border-right: 1px solid rgba(200, 200, 230, 0.15);
-    }
-    
-    [data-testid="stSidebar"] h1,
-    [data-testid="stSidebar"] h2,
-    [data-testid="stSidebar"] h3,
-    [data-testid="stSidebar"] span,
-    [data-testid="stSidebar"] label,
-    [data-testid="stSidebar"] div {
-        color: #ffffff !important;
+        text-align: justify;
     }
     
     /* フッター */
     .footer-text {
         text-align: center;
-        color: rgba(255, 255, 255, 0.7) !important;
+        color: rgba(200, 200, 230, 0.7) !important;
         font-size: 0.85rem;
-        font-family: 'Noto Sans JP', sans-serif;
+        margin-top: 3rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(200, 200, 230, 0.2);
     }
     
-    /* スライダー */
-    .stSlider > div > div > div > div {
-        background: rgba(200, 180, 255, 0.7) !important;
-    }
-    
-    /* Expander（折りたたみ）- 暗い背景・白文字 */
+    /* エキスパンダー */
     [data-testid="stExpander"] {
-        background: rgba(30, 30, 55, 0.9) !important;
+        background: rgba(30, 30, 55, 0.5) !important;
         border: 1px solid rgba(200, 200, 230, 0.2) !important;
-        border-radius: 12px !important;
+        border-radius: 10px !important;
     }
     
     [data-testid="stExpander"] summary {
-        color: #ffffff !important;
-    }
-    
-    [data-testid="stExpander"] svg {
-        fill: #ffffff !important;
-    }
-    
-    /* Expander内の全ての要素を暗い背景に */
-    [data-testid="stExpander"] > div {
         background: transparent !important;
     }
     
@@ -379,6 +428,12 @@ def init_session_state():
         st.session_state.expanded_query = None
     if "expanded_stories" not in st.session_state:
         st.session_state.expanded_stories = {}
+    if "searcher" not in st.session_state:
+        # searcher を初期化してセッションに保存（関連星座の参照用）
+        try:
+            st.session_state.searcher = ConstellationSearcher(CONSTELLATION_DATA_PATH, INDEX_DIR)
+        except Exception as e:
+            st.session_state.searcher = None
 
 
 def get_month_names(months: list) -> str:
@@ -393,8 +448,92 @@ def get_month_names(months: list) -> str:
     return "、".join([month_names.get(m, str(m)) for m in sorted(months)])
 
 
+@st.cache_data(ttl=3600)  # 1時間キャッシュ
+def get_related_constellations(constellation_id: str, myth_summary: str, top_k: int = 5):
+    """
+    myth_summaryから関連星座を検索（キャッシュ付き）
+    
+    Args:
+        constellation_id: 現在の星座ID（除外用）
+        myth_summary: 検索クエリとして使う神話の要約
+        top_k: 返す関連星座の数
+    
+    Returns:
+        関連星座の情報のリスト [{"jp_name": "...", "id": "...", "snippet": "..."}, ...]
+    """
+    try:
+        from src.constellation_bm25_vec_rrf_search import hybrid_search_constellations
+        
+        # 関連星座を検索（自分自身を除外するため多めに取得）
+        related_results = hybrid_search_constellations(
+            query=myth_summary,
+            k_bm25=10,
+            k_vec=10,
+            topk=top_k + 1  # 自分を除くため+1
+        )
+        
+        # 自分自身を除外して上位top_k件を取得
+        related_list = []
+        for result in related_results:
+            if result['id'] != constellation_id and len(related_list) < top_k:
+                # 検索結果のsnippetを使用（これが実際に検索でヒットした部分）
+                related_list.append({
+                    'jp_name': result['jp_name'],
+                    'id': result['id'],
+                    'snippet': result.get('snippet', '')
+                })
+        
+        return related_list
+    except Exception as e:
+        return []
+
+
+@st.cache_data(ttl=3600)  # 1時間キャッシュ
+def get_myth_oneliner(snippet: str, constellation_name: str) -> str:
+    """
+    LLMを使って検索結果のsnippetを一言で要約
+    
+    Args:
+        snippet: 検索結果のスニペット（実際にヒットした部分）
+        constellation_name: 星座の日本語名
+    
+    Returns:
+        一言要約（15文字以内）
+    """
+    if not snippet:
+        return ""
+    
+    try:
+        from openai import OpenAI
+        client = OpenAI()
+        
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "あなたは星座の神話を簡潔に要約する専門家です。与えられたテキストから最も重要なポイントを15文字以内の一言で表現してください。キャッチーで印象的な言葉を使ってください。"
+                },
+                {
+                    "role": "user",
+                    "content": f"星座名: {constellation_name}\nテキスト: {snippet}\n\n一言で:"
+                }
+            ],
+            max_tokens=50,
+            temperature=0.7
+        )
+        
+        oneliner = response.choices[0].message.content.strip()
+        # 余分な記号を削除
+        oneliner = oneliner.replace('"', '').replace('「', '').replace('」', '').strip()
+        return oneliner
+    except Exception as e:
+        # エラー時は最初の20文字を返す
+        return snippet[:20] + "..." if len(snippet) > 20 else snippet
+
+
 def render_constellation_card(constellation: dict, score: float = None, index: int = 0):
-    """星座カードをレンダリング（ストーリー展開機能付き）"""
+    """星座カードをレンダリング（ストーリー展開機能 + 関連星座表示付き）"""
     card_id = constellation['id']
     
     # カード本体
@@ -408,8 +547,32 @@ def render_constellation_card(constellation: dict, score: float = None, index: i
             <div class="constellation-english">{constellation['id']}</div>
             <div class="myth-text">{constellation.get('myth_summary', '神話情報なし')}</div>
             <div class="best-months">🌙 見頃: {get_month_names(constellation.get('best_months', []))}</div>
-        </div>
         """, unsafe_allow_html=True)
+        
+        # 関連星座セクション（myth_summaryから動的に検索、キャッシュ付き）
+        myth_summary = constellation.get('myth_summary', '')
+        if myth_summary:
+            related_list = get_related_constellations(card_id, myth_summary, top_k=5)
+            
+            if related_list:
+                related_items_html = []
+                for rel in related_list:
+                    # 検索結果のsnippetをもとにLLMで一言要約
+                    oneliner = get_myth_oneliner(rel['snippet'], rel['jp_name'])
+                    
+                    # HTMLエスケープを防ぐため、シンプルな構造に
+                    item_html = f'<span class="related-item"><span class="related-name">🔗 {rel["jp_name"]}</span><span class="related-desc">{oneliner}</span></span>'
+                    related_items_html.append(item_html)
+                
+                related_html = ''.join(related_items_html)
+                st.markdown(f"""
+                <div class="related-constellations">
+                    <div class="related-title">✨ 関連する星座</div>
+                    {related_html}
+                </div>
+                """, unsafe_allow_html=True)
+        
+        st.markdown("</div>", unsafe_allow_html=True)
         
         # ストーリーボタン
         if constellation.get('myth_summary'):
@@ -514,6 +677,9 @@ def main():
                 # コンポーネント初期化
                 expander = QueryExpander(model=DEFAULT_LLM)
                 searcher = ConstellationSearcher(CONSTELLATION_DATA_PATH, INDEX_DIR)
+                
+                # searcher をセッション状態に保存
+                st.session_state.searcher = searcher
                 
                 # クエリ拡張
                 expanded = expander.expand(query)
