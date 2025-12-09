@@ -16,7 +16,7 @@ sys.path.append(os.path.dirname(__file__))
 
 from src.query_expander import QueryExpander, StoryGenerator
 from src.searcher import ConstellationSearcher
-from config import CONSTELLATION_DATA_PATH, INDEX_PATH, DEFAULT_LLM, DEFAULT_TOP_K
+from config import CONSTELLATION_DATA_PATH, INDEX_DIR, DEFAULT_LLM, DEFAULT_TOP_K
 
 # ページ設定
 st.set_page_config(
@@ -513,7 +513,7 @@ def main():
             try:
                 # コンポーネント初期化
                 expander = QueryExpander(model=DEFAULT_LLM)
-                searcher = ConstellationSearcher(CONSTELLATION_DATA_PATH, INDEX_PATH)
+                searcher = ConstellationSearcher(CONSTELLATION_DATA_PATH, INDEX_DIR)
                 
                 # クエリ拡張
                 expanded = expander.expand(query)
