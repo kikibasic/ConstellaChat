@@ -283,16 +283,14 @@ st.markdown("""
     }
     
     .related-item {
-        display: inline-block;
+        display: block;
         background: rgba(100, 85, 150, 0.5);
         border: 1px solid rgba(180, 160, 220, 0.6);
-        padding: 0.6rem 1rem;
-        border-radius: 18px;
-        margin: 0.4rem 0.4rem 0.4rem 0;
-        font-size: 0.85rem;
+        padding: 0.8rem 1rem;
+        border-radius: 12px;
+        margin: 0.6rem 0;
         transition: all 0.2s ease;
         cursor: default;
-        vertical-align: top;
     }
     
     .related-item:hover {
@@ -305,17 +303,17 @@ st.markdown("""
     .related-name {
         font-weight: 600;
         display: block;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.4rem;
         color: #ffffff !important;
         font-size: 0.9rem;
     }
     
     .related-desc {
-        font-size: 0.75rem;
+        font-size: 0.78rem;
         color: #e0e0ff !important;
-        font-style: italic;
         display: block;
-        line-height: 1.4;
+        line-height: 1.6;
+        opacity: 0.9;
     }
     
     /* ストーリーボックス */
@@ -449,7 +447,7 @@ def get_month_names(months: list) -> str:
 
 
 @st.cache_data(ttl=3600)  # 1時間キャッシュ
-def get_related_constellations(constellation_id: str, myth_summary: str, top_k: int = 5):
+def get_related_constellations(constellation_id: str, myth_summary: str, top_k: int = 5, use_query_expansion: bool = False):
     """
     myth_summaryから関連星座を検索（キャッシュ付き）
     
@@ -457,16 +455,46 @@ def get_related_constellations(constellation_id: str, myth_summary: str, top_k: 
         constellation_id: 現在の星座ID（除外用）
         myth_summary: 検索クエリとして使う神話の要約
         top_k: 返す関連星座の数
+        use_query_expansion: クエリ拡張を使うかどうか（デフォルト: False）
     
     Returns:
-        関連星座の情報のリスト [{"jp_name": "...", "id": "...", "snippet": "..."}, ...]
+        関連星座の情報のリスト [{"jp_name": "...", "id": "...", "myth_summary": "..."}, ...]
     """
     try:
         from src.constellation_bm25_vec_rrf_search import hybrid_search_constellations
         
+        # クエリ準備
+        query = myth_summary
+        
+        # クエリ拡張（オプション）
+        if use_query_expansion and myth_summary:
+            try:
+                from src.query_expander import QueryExpander
+                expander = QueryExpander(model=DEFAULT_LLM)
+                expanded = expander.expand(myth_summary)
+                
+                # 拡張されたクエリから文字列を構築
+                query_parts = []
+                if isinstance(expanded, dict):
+                    # original
+                    if 'original' in expanded:
+                        query_parts.append(expanded['original'])
+                    # keywords
+                    if 'keywords' in expanded and isinstance(expanded['keywords'], list):
+                        query_parts.extend(expanded['keywords'])
+                    # tokens
+                    if 'tokens' in expanded and isinstance(expanded['tokens'], list):
+                        query_parts.extend(expanded['tokens'])
+                
+                if query_parts:
+                    query = ' '.join(str(p) for p in query_parts[:10])  # 最大10トークン
+            except Exception as e:
+                # クエリ拡張に失敗したら元のmyth_summaryを使う
+                pass
+        
         # 関連星座を検索（自分自身を除外するため多めに取得）
         related_results = hybrid_search_constellations(
-            query=myth_summary,
+            query=query,
             k_bm25=10,
             k_vec=10,
             topk=top_k + 1  # 自分を除くため+1
@@ -476,11 +504,16 @@ def get_related_constellations(constellation_id: str, myth_summary: str, top_k: 
         related_list = []
         for result in related_results:
             if result['id'] != constellation_id and len(related_list) < top_k:
-                # 検索結果のsnippetを使用（これが実際に検索でヒットした部分）
+                # searcher から完全なmyth_summaryを取得
+                full_myth = ""
+                if st.session_state.searcher:
+                    full_info = st.session_state.searcher.constellations_by_id.get(result['id'], {})
+                    full_myth = full_info.get('myth_summary', '')
+                
                 related_list.append({
                     'jp_name': result['jp_name'],
                     'id': result['id'],
-                    'snippet': result.get('snippet', '')
+                    'myth_summary': full_myth
                 })
         
         return related_list
@@ -489,18 +522,18 @@ def get_related_constellations(constellation_id: str, myth_summary: str, top_k: 
 
 
 @st.cache_data(ttl=3600)  # 1時間キャッシュ
-def get_myth_oneliner(snippet: str, constellation_name: str) -> str:
+def format_myth_for_related(myth_summary: str, constellation_name: str) -> str:
     """
-    LLMを使って検索結果のsnippetを一言で要約
+    LLMを使って神話本文を関連星座表示用に整形
     
     Args:
-        snippet: 検索結果のスニペット（実際にヒットした部分）
+        myth_summary: 神話の本文
         constellation_name: 星座の日本語名
     
     Returns:
-        一言要約（15文字以内）
+        整形された神話テキスト（2-3文、50-80文字程度）
     """
-    if not snippet:
+    if not myth_summary:
         return ""
     
     try:
@@ -512,24 +545,24 @@ def get_myth_oneliner(snippet: str, constellation_name: str) -> str:
             messages=[
                 {
                     "role": "system",
-                    "content": "あなたは星座の神話を簡潔に要約する専門家です。与えられたテキストから最も重要なポイントを15文字以内の一言で表現してください。キャッチーで印象的な言葉を使ってください。"
+                    "content": "あなたは星座の神話を読みやすく整形する専門家です。与えられた神話を2-3文（50-80文字程度）の読みやすい形に整形してください。重要なポイントを残しつつ、自然な日本語にしてください。"
                 },
                 {
                     "role": "user",
-                    "content": f"星座名: {constellation_name}\nテキスト: {snippet}\n\n一言で:"
+                    "content": f"星座名: {constellation_name}\n神話: {myth_summary}\n\n整形:"
                 }
             ],
-            max_tokens=50,
-            temperature=0.7
+            max_tokens=150,
+            temperature=0.5
         )
         
-        oneliner = response.choices[0].message.content.strip()
+        formatted_text = response.choices[0].message.content.strip()
         # 余分な記号を削除
-        oneliner = oneliner.replace('"', '').replace('「', '').replace('」', '').strip()
-        return oneliner
+        formatted_text = formatted_text.replace('"', '').replace('「', '').replace('」', '').strip()
+        return formatted_text
     except Exception as e:
-        # エラー時は最初の20文字を返す
-        return snippet[:20] + "..." if len(snippet) > 20 else snippet
+        # エラー時は最初の80文字を返す
+        return myth_summary[:80] + "..." if len(myth_summary) > 80 else myth_summary
 
 
 def render_constellation_card(constellation: dict, score: float = None, index: int = 0):
@@ -542,7 +575,6 @@ def render_constellation_card(constellation: dict, score: float = None, index: i
         <div class="constellation-card">
             <div class="constellation-name">
                 ⭐ {constellation['jp_name']}
-                {f'<span class="score-badge">スコア: {score:.1f}</span>' if score else ''}
             </div>
             <div class="constellation-english">{constellation['id']}</div>
             <div class="myth-text">{constellation.get('myth_summary', '神話情報なし')}</div>
@@ -557,11 +589,11 @@ def render_constellation_card(constellation: dict, score: float = None, index: i
             if related_list:
                 related_items_html = []
                 for rel in related_list:
-                    # 検索結果のsnippetをもとにLLMで一言要約
-                    oneliner = get_myth_oneliner(rel['snippet'], rel['jp_name'])
+                    # 神話本文をLLMで整形（2-3文、読みやすく）
+                    formatted_myth = format_myth_for_related(rel['myth_summary'], rel['jp_name'])
                     
                     # HTMLエスケープを防ぐため、シンプルな構造に
-                    item_html = f'<span class="related-item"><span class="related-name">🔗 {rel["jp_name"]}</span><span class="related-desc">{oneliner}</span></span>'
+                    item_html = f'<span class="related-item"><span class="related-name">🔗 {rel["jp_name"]}</span><span class="related-desc">{formatted_myth}</span></span>'
                     related_items_html.append(item_html)
                 
                 related_html = ''.join(related_items_html)
