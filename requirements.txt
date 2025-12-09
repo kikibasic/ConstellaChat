@@ -1,4 +1,4 @@
-# SkyLore - 依存パッケージ
+# ConstellaChat - Dependencies
 
 # Web UI
 streamlit>=1.28.0
@@ -6,9 +6,5 @@ streamlit>=1.28.0
 # OpenAI API
 openai>=1.0.0
 
-# ユーティリティ
+# Utilities
 python-dotenv>=1.0.0
-
-# 形態素解析（オプション：友達がインデックス改良時に使用）
-# mecab-python3>=1.0.0
-# unidic-lite>=1.0.0

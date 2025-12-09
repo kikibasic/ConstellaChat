@@ -1,6 +1,5 @@
 """
-ConstellaChat - 星座検索アプリ (Streamlit版)
-あいまいなクエリから今夜見える星座を探そう
+ConstellaChat - 星座検索アプリ
 """
 import streamlit as st
 import json
