@@ -27,73 +27,253 @@ st.set_page_config(
 )
 
 # カスタムCSS
+# カスタムCSS
 st.markdown("""
 <style>
-    .main-title {
-        font-size: 3rem;
-        font-weight: bold;
-        background: linear-gradient(120deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-align: center;
-        margin-bottom: 0.5rem;
+    /* Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Zen+Maru+Gothic:wght@400;500;700&display=swap');
+    
+    /* 背景 - 水彩風の星空グラデーション */
+    .stApp {
+        background: 
+            radial-gradient(ellipse at 10% 90%, rgba(180, 140, 200, 0.25) 0%, transparent 45%),
+            radial-gradient(ellipse at 85% 15%, rgba(140, 120, 180, 0.3) 0%, transparent 40%),
+            radial-gradient(ellipse at 50% 50%, rgba(100, 100, 160, 0.2) 0%, transparent 50%),
+            radial-gradient(ellipse at 80% 80%, rgba(80, 100, 140, 0.25) 0%, transparent 45%),
+            radial-gradient(ellipse at 20% 30%, rgba(120, 140, 200, 0.2) 0%, transparent 40%),
+            linear-gradient(160deg, #1a1a35 0%, #2a2850 25%, #252548 50%, #1e2845 75%, #1a1a38 100%);
+        background-attachment: fixed;
+        min-height: 100vh;
     }
-    .subtitle {
+    
+    /* 星のきらめき */
+    .stApp::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+            radial-gradient(2px 2px at 100px 50px, #ffffff, transparent),
+            radial-gradient(2px 2px at 200px 150px, #ffffff, transparent),
+            radial-gradient(1px 1px at 300px 250px, #ffffff, transparent),
+            radial-gradient(2px 2px at 400px 100px, #ffffff, transparent),
+            radial-gradient(1px 1px at 500px 300px, #ffffff, transparent),
+            radial-gradient(2px 2px at 600px 200px, #ffffff, transparent),
+            radial-gradient(1px 1px at 700px 350px, #ffffff, transparent),
+            radial-gradient(2px 2px at 800px 50px, #ffffff, transparent),
+            radial-gradient(1px 1px at 150px 320px, #ffffff, transparent),
+            radial-gradient(2px 2px at 250px 400px, #ffffff, transparent),
+            radial-gradient(1px 1px at 350px 80px, #ffffff, transparent),
+            radial-gradient(2px 2px at 450px 450px, #ffffff, transparent),
+            radial-gradient(3px 3px at 550px 120px, rgba(255,255,255,0.9), transparent),
+            radial-gradient(3px 3px at 650px 380px, rgba(255,255,255,0.9), transparent),
+            radial-gradient(3px 3px at 180px 180px, rgba(255,255,255,0.9), transparent);
+        background-size: 900px 500px;
+        animation: twinkle 6s ease-in-out infinite;
+        pointer-events: none;
+        z-index: 0;
+        opacity: 0.7;
+    }
+    
+    @keyframes twinkle {
+        0%, 100% { opacity: 0.7; }
+        50% { opacity: 0.4; }
+    }
+    
+    /* コンテンツを前面に */
+    .main .block-container {
+        position: relative;
+        z-index: 1;
+    }
+    
+    /* タイトル */
+    .main-title {
+        font-family: 'Zen Maru Gothic', 'Noto Sans JP', sans-serif;
+        font-size: 3.2rem;
+        font-weight: 700;
         text-align: center;
-        color: #666;
+        color: #ffffff;
+        text-shadow: 
+            0 0 20px rgba(200, 180, 255, 0.5),
+            0 0 40px rgba(150, 140, 200, 0.3);
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.08em;
+    }
+    
+    .subtitle {
+        font-family: 'Noto Sans JP', sans-serif;
+        text-align: center;
+        color: rgba(200, 200, 230, 0.9);
         font-size: 1.1rem;
         margin-bottom: 2rem;
+        letter-spacing: 0.15em;
     }
+    
+    /* 検索ボックス */
+    .stTextInput > div > div > input {
+        background: rgba(255, 255, 255, 0.08) !important;
+        border: 1px solid rgba(200, 200, 230, 0.25) !important;
+        border-radius: 12px !important;
+        color: #ffffff !important;
+        font-size: 1.1rem !important;
+        padding: 0.8rem 1rem !important;
+    }
+    
+    .stTextInput > div > div > input:focus {
+        border-color: rgba(200, 180, 255, 0.5) !important;
+        box-shadow: 0 0 15px rgba(180, 160, 220, 0.2) !important;
+    }
+    
+    .stTextInput > div > div > input::placeholder {
+        color: rgba(200, 200, 230, 0.5) !important;
+    }
+    
+    /* ボタン */
+    .stButton > button {
+        background: rgba(255, 255, 255, 0.1) !important;
+        border: 1px solid rgba(200, 200, 230, 0.3) !important;
+        border-radius: 12px !important;
+        color: #ffffff !important;
+        font-family: 'Noto Sans JP', sans-serif !important;
+        transition: all 0.3s ease !important;
+    }
+    
+    .stButton > button:hover {
+        background: rgba(200, 180, 255, 0.2) !important;
+        border-color: rgba(200, 180, 255, 0.5) !important;
+        box-shadow: 0 0 20px rgba(180, 160, 220, 0.3) !important;
+    }
+    
+    /* 星座カード */
     .constellation-card {
-        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-        border-radius: 15px;
-        padding: 1.5rem;
+        background: rgba(30, 30, 55, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(200, 200, 230, 0.15);
+        border-radius: 16px;
+        padding: 1.6rem;
         margin: 1rem 0;
         color: white;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        box-shadow: 
+            0 8px 32px rgba(0, 0, 0, 0.3),
+            inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        transition: all 0.3s ease;
     }
+    
+    .constellation-card:hover {
+        border-color: rgba(200, 180, 255, 0.3);
+        box-shadow: 
+            0 12px 40px rgba(0, 0, 0, 0.4),
+            0 0 30px rgba(180, 160, 220, 0.1);
+        transform: translateY(-2px);
+    }
+    
     .constellation-name {
+        font-family: 'Zen Maru Gothic', sans-serif;
         font-size: 1.5rem;
-        font-weight: bold;
-        color: #ffd700;
+        font-weight: 700;
+        color: #ffffff;
         margin-bottom: 0.5rem;
+        text-shadow: 0 0 10px rgba(200, 180, 255, 0.3);
     }
+    
     .constellation-english {
-        font-size: 0.9rem;
-        color: #aaa;
+        font-size: 0.85rem;
+        color: rgba(180, 180, 210, 0.7);
         margin-bottom: 1rem;
+        letter-spacing: 0.1em;
     }
+    
     .myth-text {
-        font-size: 1rem;
-        line-height: 1.6;
-        color: #e0e0e0;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 0.95rem;
+        line-height: 1.8;
+        color: rgba(230, 230, 245, 0.9);
     }
+    
     .best-months {
-        background: rgba(255, 215, 0, 0.2);
+        background: rgba(200, 180, 255, 0.15);
+        border: 1px solid rgba(200, 180, 255, 0.25);
         padding: 0.5rem 1rem;
         border-radius: 20px;
         display: inline-block;
         margin-top: 1rem;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+        color: rgba(220, 210, 255, 0.9);
     }
+    
     .score-badge {
-        background: #ffd700;
-        color: #1a1a2e;
+        background: rgba(200, 180, 255, 0.25);
+        color: #ffffff;
         padding: 0.3rem 0.8rem;
-        border-radius: 15px;
-        font-weight: bold;
+        border-radius: 12px;
+        font-weight: 500;
+        font-size: 0.8rem;
         float: right;
+        border: 1px solid rgba(200, 180, 255, 0.3);
     }
-    .search-box {
-        font-size: 1.2rem;
+    
+    /* サイドバー */
+    [data-testid="stSidebar"] {
+        background: linear-gradient(180deg, rgba(25, 25, 45, 0.95) 0%, rgba(35, 35, 60, 0.95) 100%);
+        border-right: 1px solid rgba(200, 200, 230, 0.1);
     }
-    .stTextInput > div > div > input {
-        font-size: 1.1rem;
-        padding: 0.8rem;
+    
+    [data-testid="stSidebar"] .stMarkdown h1,
+    [data-testid="stSidebar"] .stMarkdown h2,
+    [data-testid="stSidebar"] .stMarkdown h3 {
+        color: rgba(230, 220, 255, 0.9) !important;
+    }
+    
+    [data-testid="stSidebar"] .stMarkdown p,
+    [data-testid="stSidebar"] label {
+        color: rgba(200, 200, 230, 0.8) !important;
+    }
+    
+    /* フッター */
+    .footer-text {
+        text-align: center;
+        color: rgba(180, 180, 210, 0.6);
+        font-size: 0.85rem;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    
+    /* スライダー */
+    .stSlider > div > div > div > div {
+        background: rgba(200, 180, 255, 0.6) !important;
+    }
+    
+    /* Expander */
+    .streamlit-expanderHeader {
+        background: rgba(255, 255, 255, 0.05) !important;
+        border-radius: 8px !important;
+    }
+    
+    /* 区切り線 */
+    hr {
+        border-color: rgba(200, 200, 230, 0.15) !important;
+    }
+    
+    /* =========================================
+   夜空背景用：文字色修正（強制ホワイト化）
+   ========================================= */
+
+    body, h1, h2, h3, h4, p, ul, li, span, div, td, th {
+        color: #ffffff !important; /* 文字を白にする */
+    }
+
+    a {
+        color: #87CEEB !important; /* リンクを水色にする */
+    }
+
+    /* 枠線の色なども見えなくなっている場合は白くする */
+    input, textarea, select {
+        color: #000000 !important; /* 入力欄の中の文字は黒のままにする */
+        background-color: #ffffff !important;
     }
 </style>
 """, unsafe_allow_html=True)
-
 
 def init_session_state():
     """セッション状態の初期化"""
